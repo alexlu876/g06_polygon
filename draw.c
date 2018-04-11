@@ -43,7 +43,7 @@ void add_polygon( struct matrix *polygons,
   ====================*/
 void draw_polygons( struct matrix *polygons, screen s, color co ) {
   int i;
-  for(i = 0; i < polygons->lastcol; i+=3){
+  for(i = 0; i+2 < polygons->lastcol; i+=3){
     double a;
     double b;
     double c;
